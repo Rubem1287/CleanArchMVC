@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CleanArchMVC.Domain.Validation;
 
 namespace CleanArchMVC.Domain.Validation
 {
-    class DomainExceptionValidation : Exception
+    public class DomainExceptionValidation : Exception
     {
         public DomainExceptionValidation(string error) : base(error)
         {
