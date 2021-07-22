@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Domain", "CleanArchMVC.Domain\CleanArchMVC.Domain.csproj", "{CB539F8E-BEE4-4512-BFFB-0DC9715964E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Aplication", "CleanArchMVC.Aplication\CleanArchMVC.Aplication.csproj", "{6BD34E6A-0277-4691-86BE-2533AE72D39E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Application", "CleanArchMVC.Aplication\CleanArchMVC.Application.csproj", "{6BD34E6A-0277-4691-86BE-2533AE72D39E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Infra.Data", "CleanArchMVC.Infra.Data\CleanArchMVC.Infra.Data.csproj", "{A736FF19-77D2-4B67-895A-299E7B0A897C}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Infra.IoC", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.WebUI", "CleanArchMVC.WebUI\CleanArchMVC.WebUI.csproj", "{AF5ACE2D-D9CE-42D8-ABD1-B9548FC887FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMVC.Domain.Tests", "CleanArchMVC.Domain.Tests\CleanArchMVC.Domain.Tests.csproj", "{950E7364-C8F2-4E8C-8A86-82FA4D8F32EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Domain.Tests", "CleanArchMVC.Domain.Tests\CleanArchMVC.Domain.Tests.csproj", "{950E7364-C8F2-4E8C-8A86-82FA4D8F32EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
