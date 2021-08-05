@@ -10,5 +10,7 @@ namespace CleanArchMVC.Domain.Account
     {
         void SeedUsers();
         void SeedRoles();
+       
+        
     }
 }
