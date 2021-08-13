@@ -1,3 +1,4 @@
+using CleanArchMvc.Infra.IoC;
 using CleanArchMVC.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,12 +28,15 @@ namespace CleanArchMVC.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Ativar autenticação
             services.AddInfrastrutureAPI(Configuration);
+
+            services.AddInfrastructureJWT(Configuration);
+
+            services.AddInfrastructureSwagger();
+
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArchMVC.API", Version = "v1" });
-            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,8 +50,9 @@ namespace CleanArchMVC.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStatusCodePages();
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
